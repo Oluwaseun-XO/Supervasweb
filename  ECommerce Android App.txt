@@ -1,0 +1,100 @@
+# ECommerce Android App
+
+A e-commerce mobile application built with Java for Android. users can shop for products, manage cart, and enjoy a smooth shopping experience.
+
+## What This App Does
+
+- **Browse Products** - View list of products with images, prices, and ratings
+- **Search & Filter** - Find products with search and category filters
+- **Shopping Cart** - Add items to cart, adjust quantities, and see total price
+- **User Authentication** - Secure login and signup with Firebase
+- **Offline Support** - Browse products even when device is offline
+
+
+### **Architecture**
+- **MVVM Pattern** - Clean separation of UI and business logic
+- **Repository Pattern** - Centralized data management
+- **Clean Architecture** - Easy to maintain and test
+
+### **Tech Stack**
+- **Language:** Java
+- **Database:** Room (SQLite) for offline storage
+- **Authentication:** Firebase Auth
+- **Image Loading:** Glide for image display
+- **Dependency Injection:** Hilt for clean code
+- **UI:** Material Design components
+- **Navigation:** Android Navigation Component
+
+### **Key Libraries**
+```gradle
+- Room Database (offline storage)
+- Retrofit (network calls)
+- Glide (image loading)
+- Firebase (authentication)
+- Hilt (dependency injection)
+- Material Design (beautiful UI)
+```
+
+## Getting Started
+
+### **Prerequisites**
+- Android Studio (latest version)
+- Android SDK 24 or higher
+- Java 8 or higher
+
+### **Installation**
+1. **Download the zip file shared in the email**
+   
+   # Extract the Ecommerce.zip file
+   ```
+
+2. **Open in Android Studio**
+   - Open Android Studio
+   - Click "Open an existing project"
+   - Select the Ecommerce folder
+
+3. **Sync and Build**
+   - Let Android Studio sync the project
+   - Build the project
+
+4. **Run the App**
+   - Connect your Android device or start an emulator
+   - Click the green "Run" button
+
+## Project Structure
+
+```
+app/
+├── src/main/java/com/ecommerce/app/
+│   ├── data/           # Database, repositories, API calls
+│   ├── domain/         # Business logic and models
+│   ├── presentation/   # UI components (Activities, Fragments, ViewModels)
+│   └── utils/          # utilities
+├── src/main/res/       # UI layouts, images, strings
+└── build.gradle        # app dependencies
+```
+
+## Key Components
+
+### **Products**
+- Displays products, single-column layout
+- Each product shows image, name, price (₦), category, and rating
+- Pull down to refresh the product list
+
+### **Shopping Cart**
+- Shows all added items with quantities
+- Tap + or - to adjust quantities
+- Swipe or tap remove to delete items
+- Total price updates automatically
+
+### **Search & Categories**
+- Search bar at the top for quick product finding
+- Category chips for filtering (All, Electronics, Clothing, Books, etc.)
+- Results update instantly as you type
+
+## Testing
+
+The app includes:
+- **Unit tests** for business logic
+- **Integration tests** for database operations
+- **UI tests** for user interactions
